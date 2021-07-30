@@ -10,7 +10,7 @@
 */
 
 //CODE HERE
-
+ let gitDefinition = 'remote versions of a file to revert back to if needed, as well as different branches to have the ability to test different things without working on the same file messing other things up'
 //////////////////PROBLEM 2////////////////////
 /*
     Create a variable called 'gitHubDefinition'.  
@@ -18,7 +18,7 @@
 */
 
 //CODE HERE
-
+let gitDefinition = 'Online versions of a file to revert back to if needed, with the ability to check other branches of the project that you have created. '
 //////////////////PROBLEMS 3 - 8////////////////////
 /*
     For the next several problems you will be creating objects containing information about different git 
@@ -34,6 +34,10 @@
 */
 
 //CODE HERE
+let init = {
+    description: 'Initialize Git',
+    code: 'git init'
+}
 
 //////////////////PROBLEM 4////////////////////
 /*
@@ -42,7 +46,10 @@
 */
 
 //CODE HERE
-
+let clone = {
+    description: 'Clones repository to a newly created director',
+    code: 'git clone destination-of-repository-you-want-to-clone'
+}
 //////////////////PROBLEM 5////////////////////
 /*
     Create an object called 'status' with 'description' and 'code' properties 
@@ -50,7 +57,10 @@
 */
 
 //CODE HERE
-
+let status = {
+    description: 'Checks the current status of the git branch',
+    code: 'git status'
+}
 //////////////////PROBLEM 6////////////////////
 /*
     Create an object called 'add' with 'description' and 'code' properties 
@@ -58,7 +68,10 @@
 */
 
 //CODE HERE
-
+let add = {
+    description: 'adds file to the staged changes section of git that will update when committed.',
+    code: 'git add <file>'
+}
 //////////////////PROBLEM 7////////////////////
 /*
     Create an object called 'commit' with 'description' and 'code' properties
@@ -66,7 +79,10 @@
 */
 
 //CODE HERE
-
+let commit = {
+    description: 'records changes to the repository ',
+    code: `git commit -m '' `
+}
 
 //////////////////PROBLEM 8////////////////////
 /*
@@ -75,3 +91,7 @@
 */
 
 //CODE HERE
+let push = {
+    description: 'Updates remote refs along with associated objects, if no argument is specified for where to push itll just default to origin ',
+    code: `git push <remote> <branch>`
+}
