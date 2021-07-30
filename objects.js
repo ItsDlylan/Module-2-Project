@@ -16,7 +16,14 @@
 
 //CODE HERE
 
-
+let me = {
+  firstName: 'Dylan',
+  state: 'NEvada',
+  age: 19,
+  greeter: function(){
+    console.log(`Hello! my name is ${this.firstName} and I live in ${this.state}`);
+  }
+}
 
 
 
@@ -44,4 +51,18 @@
   }
 */
 
-//CODE HERE
+let carFactory = function(make,model,year){
+
+  this.make = make;
+  this.model = model;
+  this.year = year;
+
+  if(this.year > 2018){
+    this.isNew = true;
+  } else{
+    this.isNew = false;
+  }
+}
+
+let myCar = new carFactory('toyota', 'camry', 2020)
+console.log(myCar)
